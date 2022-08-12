@@ -1,0 +1,30 @@
+package com.Student_entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Student_Entity {
+	
+	@Id
+    @Column(name = "id", nullable = false,insertable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long std_id;
+	
+	 @Column(name = "std_name", nullable = false)
+	private String stdName;
+	 
+	 @Column(name = "std_age", nullable = false)
+		private String Age;
+	 
+	 @Column(name = "std_gender", nullable = false)
+		private String Gender;
+	
+	 @Column(name ="stream", nullable = false)
+	 private Long Stream;
+
+
+}
